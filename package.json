@@ -4,7 +4,7 @@
     "build": "vuepress build",
     "preserver": "npm run build",
     "server": "http-server .vuepress/dist -p 5003",
-    "deploy-dev": "gh-pages -b dev -d ./",
+    "deploy-develop": "gh-pages -b develop -d ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d .vuepress/dist"
   },
