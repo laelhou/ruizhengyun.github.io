@@ -4,9 +4,7 @@ Hello，我是胖芮。话多、乐观、喜欢读书和旅行、热爱技术、
 
 ## 交流
 
-<div style="border: 0; text-align: center; overflow:hidden;">
-    <div style="width: 50%; display:inline-block;"><img src="https://ruizhengyun.cn/images/wx/pr_person.png" /><p>我的微信：liferzy</p></div><div style="width: 50%; display:inline-block;"><img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" /><p>订阅号：编程之上</p></div>
-</div>
+<img src="https://ruizhengyun.cn/images/wx/pr_person.png" style="width: 50%;" /><img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" style="width: 50%;" />
 
 ## 小书系列
 
