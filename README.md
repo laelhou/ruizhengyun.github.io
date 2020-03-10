@@ -7,11 +7,11 @@ Hello，我是胖芮。话多、乐观、喜欢读书和旅行、热爱技术、
 <table style="border: 0; text-align: center; overflow:hidden;">
   <tr style="border: 0;">
     <td style="border: 0;">
-      <img src="./assets/pr_person.png" />
+      <img src="https://ruizhengyun.cn/images/wx/pr_person.png" />
       <p>我的微信：liferzy</p>
     </td>
     <td style="border: 0;">
-      <img src="./assets/pr_qrcode.png" />
+      <img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" />
       <p>订阅号：编程之上</p>
     </td>
   </tr>
