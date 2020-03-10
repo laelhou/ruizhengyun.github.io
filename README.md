@@ -61,6 +61,9 @@ Hello，我是胖芮。话多、乐观、喜欢读书和旅行、热爱技术、
   <a name="HTTP小书"></a>
 
   #### HTTP小书
+  
+  1. [前言](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/8)
+  1. [网络协议的日常](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/9)
 
   <a name="React小书"></a>
 
