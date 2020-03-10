@@ -38,7 +38,7 @@ module.exports = {
   title: '编程之上',
   description:
     '编程之上，致力于前后端、DevOps 等文章，使各端开发者能够突破瓶颈进一步成长。同时，也记录个人生活，不负芳华。',
-  dest: 'docs',
+  // dest: 'docs',
   themeConfig: {
     // logo: '/images/logo.jpeg',
     repo: 'ruizhengyun',

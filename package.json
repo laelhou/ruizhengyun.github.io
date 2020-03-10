@@ -3,9 +3,10 @@
     "start": "vuepress dev",
     "build": "vuepress build",
     "preserver": "npm run build",
-    "server": "http-server docs -p 5006",
+    "server": "http-server .vuepress/dist -p 5003",
+    "deploy-dev": "gh-pages -b dev -d ./",
     "predeploy": "npm run build",
-    "deploy": ""
+    "deploy": "gh-pages -b master -d .vuepress/dist"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
