@@ -1,21 +1,12 @@
 # 自我介绍
 
-Hello，我是胖芮。话多、乐观、喜欢读书和旅行、热爱技术、脑洞大开和偶尔开车等...，如今潜伏前端 9 年了，仍有一颗爱折腾年轻的心。
+Hello，我是胖芮。话多、乐观、喜欢读书和旅行、热爱技术、脑洞大开和偶尔开车等...，如今潜伏前端 9 年了，仍有一颗爱折腾年轻的心。如果一下文章能帮到你一二，请 => Star <=
 
 ## 交流
 
-<table style="border: 0; text-align: center; overflow:hidden;">
-  <tr style="border: 0;">
-    <td style="border: 0;">
-      <img src="https://ruizhengyun.cn/images/wx/pr_person.png" />
-      <p>我的微信：liferzy</p>
-    </td>
-    <td style="border: 0;">
-      <img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" />
-      <p>订阅号：编程之上</p>
-    </td>
-  </tr>
-</table>
+<div style="border: 0; text-align: center; overflow:hidden;">
+    <div style="width: 50%; display:inline-block;"><img src="https://ruizhengyun.cn/images/wx/pr_person.png" /><p>我的微信：liferzy</p></div><div style="width: 50%; display:inline-block;"><img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" /><p>订阅号：编程之上</p></div>
+</div>
 
 ## 小书系列
 
