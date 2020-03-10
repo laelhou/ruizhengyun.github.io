@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>状态提升 | 编程之上</title>
+    <meta name="description" content="编程之上，致力于前后端、DevOps 等文章，使各端开发者能够突破瓶颈进一步成长。同时，也记录个人生活，不负芳华。">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.26cb1efd.css" as="style"><link rel="preload" href="/assets/js/app.be4b832d.js" as="script"><link rel="preload" href="/assets/js/2.e6f4d46e.js" as="script"><link rel="preload" href="/assets/js/50.2838fbd1.js" as="script"><link rel="prefetch" href="/assets/js/10.386dfafb.js"><link rel="prefetch" href="/assets/js/100.448fb35c.js"><link rel="prefetch" href="/assets/js/101.853564d6.js"><link rel="prefetch" href="/assets/js/102.c52faaf0.js"><link rel="prefetch" href="/assets/js/103.559d2ff2.js"><link rel="prefetch" href="/assets/js/104.bfaba524.js"><link rel="prefetch" href="/assets/js/105.0baa130f.js"><link rel="prefetch" href="/assets/js/106.b72aaf5d.js"><link rel="prefetch" href="/assets/js/107.9c0678d9.js"><link rel="prefetch" href="/assets/js/108.b642a2d5.js"><link rel="prefetch" href="/assets/js/109.422f01ce.js"><link rel="prefetch" href="/assets/js/11.55e39b63.js"><link rel="prefetch" href="/assets/js/110.5d17d0f8.js"><link rel="prefetch" href="/assets/js/111.77a9fd11.js"><link rel="prefetch" href="/assets/js/112.e9c40c1c.js"><link rel="prefetch" href="/assets/js/113.2c08a196.js"><link rel="prefetch" href="/assets/js/114.904bbde6.js"><link rel="prefetch" href="/assets/js/115.6d637bfb.js"><link rel="prefetch" href="/assets/js/116.6e62da54.js"><link rel="prefetch" href="/assets/js/117.a495b9cf.js"><link rel="prefetch" href="/assets/js/118.dcbdd756.js"><link rel="prefetch" href="/assets/js/119.d946363c.js"><link rel="prefetch" href="/assets/js/12.6ffe8fd7.js"><link rel="prefetch" href="/assets/js/120.6fc8323b.js"><link rel="prefetch" href="/assets/js/121.68202353.js"><link rel="prefetch" href="/assets/js/122.4311fc08.js"><link rel="prefetch" href="/assets/js/123.2858a08a.js"><link rel="prefetch" href="/assets/js/124.8e16b06b.js"><link rel="prefetch" href="/assets/js/125.a8625792.js"><link rel="prefetch" href="/assets/js/126.8b536cf2.js"><link rel="prefetch" href="/assets/js/127.9769fc8f.js"><link rel="prefetch" href="/assets/js/128.84700f08.js"><link rel="prefetch" href="/assets/js/129.b7ee733c.js"><link rel="prefetch" href="/assets/js/13.413cd765.js"><link rel="prefetch" href="/assets/js/130.fa40904e.js"><link rel="prefetch" href="/assets/js/131.eab62f64.js"><link rel="prefetch" href="/assets/js/132.e9e530ff.js"><link rel="prefetch" href="/assets/js/133.ceeaa2e0.js"><link rel="prefetch" href="/assets/js/134.0a6b8d3a.js"><link rel="prefetch" href="/assets/js/135.0d4a0e9a.js"><link rel="prefetch" href="/assets/js/136.7560d55b.js"><link rel="prefetch" href="/assets/js/137.c8a3a3a1.js"><link rel="prefetch" href="/assets/js/138.766c0f3b.js"><link rel="prefetch" href="/assets/js/139.c638b559.js"><link rel="prefetch" href="/assets/js/14.b48d9829.js"><link rel="prefetch" href="/assets/js/140.a063f724.js"><link rel="prefetch" href="/assets/js/141.4b2084fa.js"><link rel="prefetch" href="/assets/js/142.a796b1f9.js"><link rel="prefetch" href="/assets/js/143.b0213d6d.js"><link rel="prefetch" href="/assets/js/144.a81d6134.js"><link rel="prefetch" href="/assets/js/145.84f26ce6.js"><link rel="prefetch" href="/assets/js/146.a6d946f5.js"><link rel="prefetch" href="/assets/js/147.cc96d816.js"><link rel="prefetch" href="/assets/js/148.38d215c3.js"><link rel="prefetch" href="/assets/js/149.2c1755ed.js"><link rel="prefetch" href="/assets/js/15.4f5a5421.js"><link rel="prefetch" href="/assets/js/150.925ebefc.js"><link rel="prefetch" href="/assets/js/151.1941f3d4.js"><link rel="prefetch" href="/assets/js/152.a40e7e71.js"><link rel="prefetch" href="/assets/js/153.b1e18a5f.js"><link rel="prefetch" href="/assets/js/154.393045fe.js"><link rel="prefetch" href="/assets/js/155.7d12f8af.js"><link rel="prefetch" href="/assets/js/156.fb33a690.js"><link rel="prefetch" href="/assets/js/157.254a916a.js"><link rel="prefetch" href="/assets/js/158.ba07a987.js"><link rel="prefetch" href="/assets/js/159.eaabf366.js"><link rel="prefetch" href="/assets/js/16.cf354679.js"><link rel="prefetch" href="/assets/js/160.38a68bc8.js"><link rel="prefetch" href="/assets/js/161.3f90bd3b.js"><link rel="prefetch" href="/assets/js/162.082ab04a.js"><link rel="prefetch" href="/assets/js/163.05bc4f4f.js"><link rel="prefetch" href="/assets/js/164.cec6ee5d.js"><link rel="prefetch" href="/assets/js/165.47c3bbe2.js"><link rel="prefetch" href="/assets/js/166.0460a8c0.js"><link rel="prefetch" href="/assets/js/167.997c02dd.js"><link rel="prefetch" href="/assets/js/168.4a3b2865.js"><link rel="prefetch" href="/assets/js/169.33e13e01.js"><link rel="prefetch" href="/assets/js/17.96904307.js"><link rel="prefetch" href="/assets/js/170.c5923d4a.js"><link rel="prefetch" href="/assets/js/171.85c643f1.js"><link rel="prefetch" href="/assets/js/172.4d47209f.js"><link rel="prefetch" href="/assets/js/173.e0b6fa43.js"><link rel="prefetch" href="/assets/js/174.ae615c3d.js"><link rel="prefetch" href="/assets/js/175.263d7bf7.js"><link rel="prefetch" href="/assets/js/176.6fb7f60d.js"><link rel="prefetch" href="/assets/js/177.2b05b5ab.js"><link rel="prefetch" href="/assets/js/178.20236c3c.js"><link rel="prefetch" href="/assets/js/179.324102e6.js"><link rel="prefetch" href="/assets/js/18.42c93012.js"><link rel="prefetch" href="/assets/js/180.453ee6fd.js"><link rel="prefetch" href="/assets/js/181.0a1f3095.js"><link rel="prefetch" href="/assets/js/182.d4b02052.js"><link rel="prefetch" href="/assets/js/183.1dd555de.js"><link rel="prefetch" href="/assets/js/184.ad3712d3.js"><link rel="prefetch" href="/assets/js/185.b73759aa.js"><link rel="prefetch" href="/assets/js/186.e780978e.js"><link rel="prefetch" href="/assets/js/187.3c2b483a.js"><link rel="prefetch" href="/assets/js/188.25625ea1.js"><link rel="prefetch" href="/assets/js/189.599a5cca.js"><link rel="prefetch" href="/assets/js/19.e626e680.js"><link rel="prefetch" href="/assets/js/190.ed1bbac9.js"><link rel="prefetch" href="/assets/js/191.af3dad2a.js"><link rel="prefetch" href="/assets/js/20.d742c97a.js"><link rel="prefetch" href="/assets/js/21.24a509c2.js"><link rel="prefetch" href="/assets/js/22.6f5d7db4.js"><link rel="prefetch" href="/assets/js/23.d3d09ebf.js"><link rel="prefetch" href="/assets/js/24.86be4de6.js"><link rel="prefetch" href="/assets/js/25.a9a95723.js"><link rel="prefetch" href="/assets/js/26.b3035933.js"><link rel="prefetch" href="/assets/js/27.182f0bbd.js"><link rel="prefetch" href="/assets/js/28.4cf93766.js"><link rel="prefetch" href="/assets/js/29.10fe6eeb.js"><link rel="prefetch" href="/assets/js/3.b8c0a42c.js"><link rel="prefetch" href="/assets/js/30.2584a8ee.js"><link rel="prefetch" href="/assets/js/31.5b99026e.js"><link rel="prefetch" href="/assets/js/32.f0d10a1e.js"><link rel="prefetch" href="/assets/js/33.c122ea8d.js"><link rel="prefetch" href="/assets/js/34.3cb46ef4.js"><link rel="prefetch" href="/assets/js/35.6dab8f7e.js"><link rel="prefetch" href="/assets/js/36.00835564.js"><link rel="prefetch" href="/assets/js/37.8613c191.js"><link rel="prefetch" href="/assets/js/38.8f8487c6.js"><link rel="prefetch" href="/assets/js/39.f3ce31e9.js"><link rel="prefetch" href="/assets/js/4.27e79820.js"><link rel="prefetch" href="/assets/js/40.89e7866a.js"><link rel="prefetch" href="/assets/js/41.14e8af97.js"><link rel="prefetch" href="/assets/js/42.205f8e31.js"><link rel="prefetch" href="/assets/js/43.2a053509.js"><link rel="prefetch" href="/assets/js/44.1c8df6de.js"><link rel="prefetch" href="/assets/js/45.0264d807.js"><link rel="prefetch" href="/assets/js/46.19967918.js"><link rel="prefetch" href="/assets/js/47.a889acde.js"><link rel="prefetch" href="/assets/js/48.21bbeed6.js"><link rel="prefetch" href="/assets/js/49.cb34d2a9.js"><link rel="prefetch" href="/assets/js/5.c6dfbcdd.js"><link rel="prefetch" href="/assets/js/51.388ea9ba.js"><link rel="prefetch" href="/assets/js/52.871a6dce.js"><link rel="prefetch" href="/assets/js/53.1c2208c5.js"><link rel="prefetch" href="/assets/js/54.809944a7.js"><link rel="prefetch" href="/assets/js/55.aaac8fd3.js"><link rel="prefetch" href="/assets/js/56.41b644d3.js"><link rel="prefetch" href="/assets/js/57.bbad7929.js"><link rel="prefetch" href="/assets/js/58.e2f1539a.js"><link rel="prefetch" href="/assets/js/59.5e057b34.js"><link rel="prefetch" href="/assets/js/6.73c5f391.js"><link rel="prefetch" href="/assets/js/60.7035aa00.js"><link rel="prefetch" href="/assets/js/61.dae0f0f0.js"><link rel="prefetch" href="/assets/js/62.c5503ee6.js"><link rel="prefetch" href="/assets/js/63.e3ba917c.js"><link rel="prefetch" href="/assets/js/64.737a5548.js"><link rel="prefetch" href="/assets/js/65.d4e2bdb5.js"><link rel="prefetch" href="/assets/js/66.fcbd6a1f.js"><link rel="prefetch" href="/assets/js/67.19e86b66.js"><link rel="prefetch" href="/assets/js/68.b3e1eb36.js"><link rel="prefetch" href="/assets/js/69.fefe0f80.js"><link rel="prefetch" href="/assets/js/7.f11e9c75.js"><link rel="prefetch" href="/assets/js/70.c05eeeb0.js"><link rel="prefetch" href="/assets/js/71.9045f09b.js"><link rel="prefetch" href="/assets/js/72.e4cf6586.js"><link rel="prefetch" href="/assets/js/73.c9e2981b.js"><link rel="prefetch" href="/assets/js/74.8a3cfe1e.js"><link rel="prefetch" href="/assets/js/75.e0cfa7cc.js"><link rel="prefetch" href="/assets/js/76.d353eda5.js"><link rel="prefetch" href="/assets/js/77.d05bd565.js"><link rel="prefetch" href="/assets/js/78.c15e96b4.js"><link rel="prefetch" href="/assets/js/79.b056b967.js"><link rel="prefetch" href="/assets/js/8.b02e5425.js"><link rel="prefetch" href="/assets/js/80.4ee36c0c.js"><link rel="prefetch" href="/assets/js/81.bf8ad507.js"><link rel="prefetch" href="/assets/js/82.10254572.js"><link rel="prefetch" href="/assets/js/83.628e479e.js"><link rel="prefetch" href="/assets/js/84.c38796f1.js"><link rel="prefetch" href="/assets/js/85.3dd8a614.js"><link rel="prefetch" href="/assets/js/86.71d1e0a5.js"><link rel="prefetch" href="/assets/js/87.6a928297.js"><link rel="prefetch" href="/assets/js/88.696527fd.js"><link rel="prefetch" href="/assets/js/89.7b24aa0e.js"><link rel="prefetch" href="/assets/js/9.8e842952.js"><link rel="prefetch" href="/assets/js/90.c374703a.js"><link rel="prefetch" href="/assets/js/91.9c986f3a.js"><link rel="prefetch" href="/assets/js/92.3aea3568.js"><link rel="prefetch" href="/assets/js/93.ee476713.js"><link rel="prefetch" href="/assets/js/94.fd1f3394.js"><link rel="prefetch" href="/assets/js/95.bf0f2e17.js"><link rel="prefetch" href="/assets/js/96.c4807c9c.js"><link rel="prefetch" href="/assets/js/97.09971290.js"><link rel="prefetch" href="/assets/js/98.766b007f.js"><link rel="prefetch" href="/assets/js/99.baa07638.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26cb1efd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">编程之上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link router-link-active">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/dva/" class="nav-link">
+  Dva
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/npm/" class="nav-link">
+  Npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/architect/" class="nav-link">
+  前端架构
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/code-style/" class="nav-link">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/nodejs/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/backend/nodejswx/" class="nav-link">
+  Node.js 开发微信公众号
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构" class="dropdown-title"><span class="title">架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/architect/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/architect/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/architect/setting/" class="nav-link">
+  配置
+</a></li><li class="dropdown-item"><!----> <a href="/architect/cli/" class="nav-link">
+  Cli
+</a></li></ul></div></div><div class="nav-item"><a href="/app/" class="nav-link">
+  应用
+</a></div><div class="nav-item"><a href="/view/" class="nav-link">
+  看法
+</a></div> <a href="https://github.com/ruizhengyun" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link router-link-active">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/dva/" class="nav-link">
+  Dva
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/npm/" class="nav-link">
+  Npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/architect/" class="nav-link">
+  前端架构
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/code-style/" class="nav-link">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/nodejs/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/backend/nodejswx/" class="nav-link">
+  Node.js 开发微信公众号
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构" class="dropdown-title"><span class="title">架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/architect/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/architect/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/architect/setting/" class="nav-link">
+  配置
+</a></li><li class="dropdown-item"><!----> <a href="/architect/cli/" class="nav-link">
+  Cli
+</a></li></ul></div></div><div class="nav-item"><a href="/app/" class="nav-link">
+  应用
+</a></div><div class="nav-item"><a href="/view/" class="nav-link">
+  看法
+</a></div> <a href="https://github.com/ruizhengyun" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>入门</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/react/" class="sidebar-link">前言</a></li><li><a href="/frontend/react/evolution.html" class="sidebar-link">趴一趴族谱</a></li><li><a href="/frontend/react/initialization.html" class="sidebar-link">初始化项目</a></li><li><a href="/frontend/react/first_component.html" class="sidebar-link">第一个组件</a></li><li><a href="/frontend/react/lifecycle.html" class="sidebar-link">生命周期</a></li><li><a href="/frontend/react/rendering.html" class="sidebar-link">页面渲染</a></li><li><a href="/frontend/react/handle.html" class="sidebar-link">事件处理</a></li><li><a href="/frontend/react/form.html" class="sidebar-link">表单</a></li><li><a href="/frontend/react/lifting_state_up.html" class="active sidebar-link">状态提升</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/react/lifting_state_up.html#简单实现" class="sidebar-link">简单实现</a></li><li class="sidebar-sub-header"><a href="/frontend/react/lifting_state_up.html#添加第二个输入框" class="sidebar-link">添加第二个输入框</a></li><li class="sidebar-sub-header"><a href="/frontend/react/lifting_state_up.html#写出转换函数" class="sidebar-link">写出转换函数</a></li><li class="sidebar-sub-header"><a href="/frontend/react/lifting_state_up.html#状态提升说明" class="sidebar-link">状态提升说明</a></li><li class="sidebar-sub-header"><a href="/frontend/react/lifting_state_up.html#总结" class="sidebar-link">总结</a></li></ul></li><li><a href="/frontend/react/idea.html" class="sidebar-link">react理念</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进阶</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>应用</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="状态提升"><a href="#状态提升" class="header-anchor">#</a> 状态提升</h1> <blockquote><p>使用 react 经常会遇到几个组件需要共用状态数据的情况。这种情况下，我们最好将这部分共享的状态提升至他们最近的父组件当中进行管理。</p></blockquote> <p>这部分内容当中，我们会创建一个温度计算器来计算水是否会在给定的温度下烧开。</p> <h2 id="简单实现"><a href="#简单实现" class="header-anchor">#</a> 简单实现</h2> <p>我们先创建一个名为 <code>BoilingVerdict</code> 的组件。它会接受 <code>celsius</code> 这个温度变量作为它的 <code>props</code> 属性，最后根据温度判断返回内容：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">BoilingVerdict</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>props<span class="token punctuation">.</span>celsius <span class="token operator">&gt;=</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>水会烧开<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>水不会烧开<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>再写一个名为 <code>Calculator</code> 的组件，它渲染一个 <code>&lt;input&gt;</code> 来接受用户输入，然后将输入的温度值保存在 <code>this.state.temperature</code> 当中，同时根据输入的值渲染出 <code>BoilingVerdict</code> 组件。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Calculator</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>temperature<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function-variable function">handleChange</span> <span class="token operator">=</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>temperature<span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> temperature <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>fieldset<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>legend<span class="token operator">&gt;</span>输入一个摄氏温度<span class="token operator">&lt;</span><span class="token operator">/</span>legend<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>input value<span class="token operator">=</span><span class="token punctuation">{</span>temperature<span class="token punctuation">}</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleChange<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>BoilingVerdict celsius<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">parseFloat</span><span class="token punctuation">(</span>temperature<span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>fieldset<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="添加第二个输入框"><a href="#添加第二个输入框" class="header-anchor">#</a> 添加第二个输入框</h2> <p>现在有了一个新的需求，在提供摄氏度输入的基础之上，再提供一个华氏温度输入，并且它们能保持同步。</p> <p>可以通过从 <code>Calculator</code> 组件中抽离一个 <code>TemperatureInput</code> 组件出来。我们也会给它添加一个值为 <code>c</code> 或 <code>f</code> 的表示温度单位的 <code>scale</code> 属性。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> scaleNames <span class="token operator">=</span> <span class="token punctuation">{</span>
+  c<span class="token operator">:</span> <span class="token string">'Celsius'</span><span class="token punctuation">,</span>
+  f<span class="token operator">:</span> <span class="token string">'Fahrenheit'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TemperatureInput</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      temperature<span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function-variable function">handleChange</span> <span class="token operator">=</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      temperature<span class="token operator">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> temperature <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> scale <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>fieldset<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>legend<span class="token operator">&gt;</span>输入温度（<span class="token punctuation">{</span>scaleNames<span class="token punctuation">[</span>scale<span class="token punctuation">]</span><span class="token punctuation">}</span>）<span class="token operator">:</span><span class="token operator">&lt;</span><span class="token operator">/</span>legend<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>input value<span class="token operator">=</span><span class="token punctuation">{</span>temperature<span class="token punctuation">}</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleChange<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>fieldset<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>对 <code>Calculator</code> 稍作修改，来渲染两个不同的温度输入框。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">Calculator</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>TemperatureInput scale<span class="token operator">=</span><span class="token string">&quot;c&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>TemperatureInput scale<span class="token operator">=</span><span class="token string">&quot;f&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我们现在有了两个输入框，但是当你在其中一个输入时，另一个并不会更新。这显然是不符合我们的需求的。</p> <p>另外，我们此时也不能从 <code>Calculator</code> 组件中展示 <code>BoilingVerdict</code> 的渲染结果。因为现在表示温度的状态数据只存在于 <code>TemperatureInput</code> 组件当中。</p> <h2 id="写出转换函数"><a href="#写出转换函数" class="header-anchor">#</a> 写出转换函数</h2> <p>我们写两个可以将摄氏度和华氏度互相转换的函数。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">toCelsius</span> <span class="token operator">=</span> <span class="token parameter">fahrenheit</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>fahrenheit <span class="token operator">-</span> <span class="token number">32</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">5</span> <span class="token operator">/</span> <span class="token number">9</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">toFahrenheit</span> <span class="token operator">=</span> <span class="token parameter">celsius</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>celsius <span class="token operator">*</span> <span class="token number">9</span> <span class="token operator">/</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">32</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这两个函数只是单纯转换数字。我们还需要另外一个函数，它接受两个参数，第一个接受字符串 <code>temperature</code> 变量，第二个参数则是上面编写的单位转换函数。最后会返回一个字符串。我们会使用它来根据一个输入框的输入计算出另一个输入框的值。</p> <p>我们最后取到输出的小数点后三位，而 <code>temperature</code> 输入不合法的时候，这个函数则会返回空字符串。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">tryConvert</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">temperature<span class="token punctuation">,</span> convertFn</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> input <span class="token operator">=</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span>temperature<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Number<span class="token punctuation">.</span><span class="token function">isNaN</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">const</span> output <span class="token operator">=</span> <span class="token function">convertFn</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> rounded <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>output <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1000</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> rounded<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>举两个例子:</p> <ul><li><code>tryConvert('abc', toCelsius)</code> 会返回<strong>空字符串</strong>;</li> <li><code>tryConvert('10.22', toFahrenheit)</code> 会返回 <strong>'50.396'</strong>;</li></ul> <h2 id="状态提升说明"><a href="#状态提升说明" class="header-anchor">#</a> 状态提升说明</h2> <p>现在，两个 <code>TemperatureInput</code> 组件都是在自己的 <code>state</code> 中独立保存数据。但是，我们想要的是这两个输入能保持同步。当我们更新摄氏输入（Celsius）时，华氏度（Fahrenheit ）这个框应该能显示转换后的的温度数值，反之亦然。</p> <p>在React中，状态分享是通过将 <code>state</code> 数据提升至离需要这些数据的组件最近的父组件来完成的。这就是所谓的<strong>状态提升</strong>。我们会将 <code>TemperatureInput</code> 组件自身保存的 <code>state</code> 移到 <code>Calculator</code> 中。</p> <p>如果 <code>Calculator</code> 组件拥有了提升上来共享的状态数据，那它就会成为<strong>两个温度输入组件的“数据源”</strong>。它会传递给下面温度输入组件一致的数据。由于两个 <code>TemperatureInput</code> 温度组件的 <code>props</code> 属性都是来源于共同的父组件 <code>Calculator</code>，它们的数据也会保持同步。</p> <p>那还等什么，动起来</p> <p>TemperatureInput 组件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">TemperatureInput</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>
+  scale<span class="token punctuation">,</span>
+  temperature<span class="token punctuation">,</span>
+  onTemperatureChange
+<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">handleChange</span> <span class="token operator">=</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">onTemperatureChange</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>fieldset<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>legend<span class="token operator">&gt;</span>在<span class="token punctuation">{</span>scaleNames<span class="token punctuation">[</span>scale<span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">:</span>中输入温度数值<span class="token operator">&lt;</span><span class="token operator">/</span>legend<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>input value<span class="token operator">=</span><span class="token punctuation">{</span>temperature<span class="token punctuation">}</span> onChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleChange<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>fieldset<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Calculator</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>
+      temperature<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      scale<span class="token operator">:</span> <span class="token string">'c'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function-variable function">handleCelsiusChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">temperature</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      scale<span class="token operator">:</span> <span class="token string">'c'</span><span class="token punctuation">,</span>
+      temperature
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function-variable function">handleFahrenheitChange</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">temperature</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      scale<span class="token operator">:</span> <span class="token string">'f'</span><span class="token punctuation">,</span>
+      temperature
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> scale<span class="token punctuation">,</span> temperature <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> celsius <span class="token operator">=</span> scale <span class="token operator">===</span> <span class="token string">'f'</span> <span class="token operator">?</span> <span class="token function">tryConvert</span><span class="token punctuation">(</span>temperature<span class="token punctuation">,</span> toCelsius<span class="token punctuation">)</span> <span class="token operator">:</span> temperature<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> fahrenheit <span class="token operator">=</span> scale <span class="token operator">===</span> <span class="token string">'c'</span> <span class="token operator">?</span> <span class="token function">tryConvert</span><span class="token punctuation">(</span>temperature<span class="token punctuation">,</span> toFahrenheit<span class="token punctuation">)</span> <span class="token operator">:</span> temperature<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>TemperatureInput
+          scale<span class="token operator">=</span><span class="token string">&quot;c&quot;</span>
+          temperature<span class="token operator">=</span><span class="token punctuation">{</span>celsius<span class="token punctuation">}</span>
+          onTemperatureChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleCelsiusChange<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>TemperatureInput
+          scale<span class="token operator">=</span><span class="token string">&quot;f&quot;</span>
+          temperature<span class="token operator">=</span><span class="token punctuation">{</span>fahrenheit<span class="token punctuation">}</span>
+          onTemperatureChange<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleFahrenheitChange<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>BoilingVerdict celsius<span class="token operator">=</span><span class="token punctuation">{</span><span class="token function">parseFloat</span><span class="token punctuation">(</span>celsius<span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>现在，无论你编辑哪一个输入框，Calculator 组件中 this.state.temperature 和 this.state.scale 都会更新。向其中一个输入框输入值，另一个输入框总是基于这个值显示计算结果。</p> <p>让我们梳理下编辑输入框时所发生的一系列事情：</p> <ul><li><p>React在DOM的 <code>&lt;input&gt;</code> 上调用被指定为 <code>onChange</code> 的函数。在本例中，是 <code>TemperatureInput</code> 组件上的<code>handleChange</code> 函数。</p></li> <li><p><code>TemperatureInput</code> 组件的 <code>handleChange</code> 函数会用新输入值调用 <code>this.props.onTemperatureChange()</code> 函数。输入框组件的属性，包括 <code>onTemperatureChange</code> 都是由父组件 <code>Calculator</code> 提供的。</p></li> <li><p>当最开始渲染时，<code>Calculator</code> 组件的 <code>handleCelsiusChange</code> 方法被指定给摄氏温度输入组件 <code>TemperatureInput</code> 的 <code>onTemperatureChange</code> 方法，同时把 <code>handleFahrenheitChange</code> 方法指定给华氏输入组件 <code>TemperatureInput</code> 的 <code>onTemperatureChange</code> 方法。所以 <code>Calculator</code> 组件的两个方法都会在相应输入框被编辑时被调用。</p></li> <li><p>在这些方法内部，<code>Calculator</code> 组件会使用编辑输入的新值和当前输入框的温度单位来让React调用 <code>this.setState()</code> 方法来重渲染自身。</p></li> <li><p>React调用 <code>Calculator</code> 组件的render方法来识别UI界面的样子。基于当前值和激活的温度单位，两个输入框的值会被重新计算。温度转换就是在这里被执行的。</p></li> <li><p>React使用由 <code>Calculator</code> 指定的<strong>新 <code>props</code></strong> 来调用各个 <code>TemperatureInput</code> 组件的 <code>render</code> 方法，React也会识别出子组件的UI界面。</p></li> <li><p>React调用 <code>BoilingVerdict</code> 组件的 <code>render</code> 方法，传递摄氏温度作为它的属性。</p></li> <li><p>React DOM 会用沸腾裁决更新DOM来匹配渴望的输入值。我们编辑的输入框获取新值，而另一个输入框则用经过转换的温度值进行更新。</p></li></ul> <p>一切更新都是经过同样的步骤，因而输入框能保持同步的。</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>在React应用中，对应任何可变数据理应只有一个单一“数据源”。通常，状态都是首先添加在需要渲染数据的组件中。然后，如果另一个组件也需要这些数据，你可以将数据提升至离它们最近的共同祖先中。你应该依赖<strong>自上而下的数据流</strong>，而不是尝试在不同组件中同步状态。</p> <p>状态提升要写更多的“炉墙代码”，比起双向绑定方式，但带来的好处是，你也可以花更少的工作量找到和隔离bug。因为任何生活在某些组件中的状态数据，也只有该组件它自己能够操作这些数据，发生bug的表面积就被大大地减小了。此外，你也可以使用自定义逻辑来**拒绝（reject）或转换（transform）**用户的输入。</p> <p>如果某些数据可以由 <code>props</code> 或者 <code>state</code> 推导出来，那么它很有可能不应该在 <code>state</code> 中出现。举个例子，我们没有同时保存 <code>celsiusValue</code> 和 <code>fahrenheitValue</code>，而只是保存最新编辑的 <code>temperature</code> 和它的 <code>scale</code> 值。另一个输入框中的值总是可以在 <code>render()</code> 函数中由这些保存的数据计算出来。<strong>这样我们在不损失任何用户输入精度的情况下，可以对另一字段清除或应用四舍五入</strong>。</p> <p>当你在开发UI界面遇到问题时，你可以使用 <strong>React 开发者工具来检查 <code>props</code> 属性</strong>，并且可以点击查看组件树，直到你找到负责目前状态更新的组件。这能让你到追踪到产生 bug 的源头。</p> <p><img src="/assets/img/react-devtools-state.ef94afc3.gif" alt="状态提升总结"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/10/2020, 1:33:56 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/react/form.html" class="prev">
+        表单
+      </a></span> <span class="next"><a href="/frontend/react/idea.html">
+        react理念
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.be4b832d.js" defer></script><script src="/assets/js/2.e6f4d46e.js" defer></script><script src="/assets/js/50.2838fbd1.js" defer></script>
+  </body>
+</html>

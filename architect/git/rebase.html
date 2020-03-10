@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>rebase 说明 | 编程之上</title>
+    <meta name="description" content="编程之上，致力于前后端、DevOps 等文章，使各端开发者能够突破瓶颈进一步成长。同时，也记录个人生活，不负芳华。">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.26cb1efd.css" as="style"><link rel="preload" href="/assets/js/app.be4b832d.js" as="script"><link rel="preload" href="/assets/js/2.e6f4d46e.js" as="script"><link rel="preload" href="/assets/js/43.2a053509.js" as="script"><link rel="prefetch" href="/assets/js/10.386dfafb.js"><link rel="prefetch" href="/assets/js/100.448fb35c.js"><link rel="prefetch" href="/assets/js/101.853564d6.js"><link rel="prefetch" href="/assets/js/102.c52faaf0.js"><link rel="prefetch" href="/assets/js/103.559d2ff2.js"><link rel="prefetch" href="/assets/js/104.bfaba524.js"><link rel="prefetch" href="/assets/js/105.0baa130f.js"><link rel="prefetch" href="/assets/js/106.b72aaf5d.js"><link rel="prefetch" href="/assets/js/107.9c0678d9.js"><link rel="prefetch" href="/assets/js/108.b642a2d5.js"><link rel="prefetch" href="/assets/js/109.422f01ce.js"><link rel="prefetch" href="/assets/js/11.55e39b63.js"><link rel="prefetch" href="/assets/js/110.5d17d0f8.js"><link rel="prefetch" href="/assets/js/111.77a9fd11.js"><link rel="prefetch" href="/assets/js/112.e9c40c1c.js"><link rel="prefetch" href="/assets/js/113.2c08a196.js"><link rel="prefetch" href="/assets/js/114.904bbde6.js"><link rel="prefetch" href="/assets/js/115.6d637bfb.js"><link rel="prefetch" href="/assets/js/116.6e62da54.js"><link rel="prefetch" href="/assets/js/117.a495b9cf.js"><link rel="prefetch" href="/assets/js/118.dcbdd756.js"><link rel="prefetch" href="/assets/js/119.d946363c.js"><link rel="prefetch" href="/assets/js/12.6ffe8fd7.js"><link rel="prefetch" href="/assets/js/120.6fc8323b.js"><link rel="prefetch" href="/assets/js/121.68202353.js"><link rel="prefetch" href="/assets/js/122.4311fc08.js"><link rel="prefetch" href="/assets/js/123.2858a08a.js"><link rel="prefetch" href="/assets/js/124.8e16b06b.js"><link rel="prefetch" href="/assets/js/125.a8625792.js"><link rel="prefetch" href="/assets/js/126.8b536cf2.js"><link rel="prefetch" href="/assets/js/127.9769fc8f.js"><link rel="prefetch" href="/assets/js/128.84700f08.js"><link rel="prefetch" href="/assets/js/129.b7ee733c.js"><link rel="prefetch" href="/assets/js/13.413cd765.js"><link rel="prefetch" href="/assets/js/130.fa40904e.js"><link rel="prefetch" href="/assets/js/131.eab62f64.js"><link rel="prefetch" href="/assets/js/132.e9e530ff.js"><link rel="prefetch" href="/assets/js/133.ceeaa2e0.js"><link rel="prefetch" href="/assets/js/134.0a6b8d3a.js"><link rel="prefetch" href="/assets/js/135.0d4a0e9a.js"><link rel="prefetch" href="/assets/js/136.7560d55b.js"><link rel="prefetch" href="/assets/js/137.c8a3a3a1.js"><link rel="prefetch" href="/assets/js/138.766c0f3b.js"><link rel="prefetch" href="/assets/js/139.c638b559.js"><link rel="prefetch" href="/assets/js/14.b48d9829.js"><link rel="prefetch" href="/assets/js/140.a063f724.js"><link rel="prefetch" href="/assets/js/141.4b2084fa.js"><link rel="prefetch" href="/assets/js/142.a796b1f9.js"><link rel="prefetch" href="/assets/js/143.b0213d6d.js"><link rel="prefetch" href="/assets/js/144.a81d6134.js"><link rel="prefetch" href="/assets/js/145.84f26ce6.js"><link rel="prefetch" href="/assets/js/146.a6d946f5.js"><link rel="prefetch" href="/assets/js/147.cc96d816.js"><link rel="prefetch" href="/assets/js/148.38d215c3.js"><link rel="prefetch" href="/assets/js/149.2c1755ed.js"><link rel="prefetch" href="/assets/js/15.4f5a5421.js"><link rel="prefetch" href="/assets/js/150.925ebefc.js"><link rel="prefetch" href="/assets/js/151.1941f3d4.js"><link rel="prefetch" href="/assets/js/152.a40e7e71.js"><link rel="prefetch" href="/assets/js/153.b1e18a5f.js"><link rel="prefetch" href="/assets/js/154.393045fe.js"><link rel="prefetch" href="/assets/js/155.7d12f8af.js"><link rel="prefetch" href="/assets/js/156.fb33a690.js"><link rel="prefetch" href="/assets/js/157.254a916a.js"><link rel="prefetch" href="/assets/js/158.ba07a987.js"><link rel="prefetch" href="/assets/js/159.eaabf366.js"><link rel="prefetch" href="/assets/js/16.cf354679.js"><link rel="prefetch" href="/assets/js/160.38a68bc8.js"><link rel="prefetch" href="/assets/js/161.3f90bd3b.js"><link rel="prefetch" href="/assets/js/162.082ab04a.js"><link rel="prefetch" href="/assets/js/163.05bc4f4f.js"><link rel="prefetch" href="/assets/js/164.cec6ee5d.js"><link rel="prefetch" href="/assets/js/165.47c3bbe2.js"><link rel="prefetch" href="/assets/js/166.0460a8c0.js"><link rel="prefetch" href="/assets/js/167.997c02dd.js"><link rel="prefetch" href="/assets/js/168.4a3b2865.js"><link rel="prefetch" href="/assets/js/169.33e13e01.js"><link rel="prefetch" href="/assets/js/17.96904307.js"><link rel="prefetch" href="/assets/js/170.c5923d4a.js"><link rel="prefetch" href="/assets/js/171.85c643f1.js"><link rel="prefetch" href="/assets/js/172.4d47209f.js"><link rel="prefetch" href="/assets/js/173.e0b6fa43.js"><link rel="prefetch" href="/assets/js/174.ae615c3d.js"><link rel="prefetch" href="/assets/js/175.263d7bf7.js"><link rel="prefetch" href="/assets/js/176.6fb7f60d.js"><link rel="prefetch" href="/assets/js/177.2b05b5ab.js"><link rel="prefetch" href="/assets/js/178.20236c3c.js"><link rel="prefetch" href="/assets/js/179.324102e6.js"><link rel="prefetch" href="/assets/js/18.42c93012.js"><link rel="prefetch" href="/assets/js/180.453ee6fd.js"><link rel="prefetch" href="/assets/js/181.0a1f3095.js"><link rel="prefetch" href="/assets/js/182.d4b02052.js"><link rel="prefetch" href="/assets/js/183.1dd555de.js"><link rel="prefetch" href="/assets/js/184.ad3712d3.js"><link rel="prefetch" href="/assets/js/185.b73759aa.js"><link rel="prefetch" href="/assets/js/186.e780978e.js"><link rel="prefetch" href="/assets/js/187.3c2b483a.js"><link rel="prefetch" href="/assets/js/188.25625ea1.js"><link rel="prefetch" href="/assets/js/189.599a5cca.js"><link rel="prefetch" href="/assets/js/19.e626e680.js"><link rel="prefetch" href="/assets/js/190.ed1bbac9.js"><link rel="prefetch" href="/assets/js/191.af3dad2a.js"><link rel="prefetch" href="/assets/js/20.d742c97a.js"><link rel="prefetch" href="/assets/js/21.24a509c2.js"><link rel="prefetch" href="/assets/js/22.6f5d7db4.js"><link rel="prefetch" href="/assets/js/23.d3d09ebf.js"><link rel="prefetch" href="/assets/js/24.86be4de6.js"><link rel="prefetch" href="/assets/js/25.a9a95723.js"><link rel="prefetch" href="/assets/js/26.b3035933.js"><link rel="prefetch" href="/assets/js/27.182f0bbd.js"><link rel="prefetch" href="/assets/js/28.4cf93766.js"><link rel="prefetch" href="/assets/js/29.10fe6eeb.js"><link rel="prefetch" href="/assets/js/3.b8c0a42c.js"><link rel="prefetch" href="/assets/js/30.2584a8ee.js"><link rel="prefetch" href="/assets/js/31.5b99026e.js"><link rel="prefetch" href="/assets/js/32.f0d10a1e.js"><link rel="prefetch" href="/assets/js/33.c122ea8d.js"><link rel="prefetch" href="/assets/js/34.3cb46ef4.js"><link rel="prefetch" href="/assets/js/35.6dab8f7e.js"><link rel="prefetch" href="/assets/js/36.00835564.js"><link rel="prefetch" href="/assets/js/37.8613c191.js"><link rel="prefetch" href="/assets/js/38.8f8487c6.js"><link rel="prefetch" href="/assets/js/39.f3ce31e9.js"><link rel="prefetch" href="/assets/js/4.27e79820.js"><link rel="prefetch" href="/assets/js/40.89e7866a.js"><link rel="prefetch" href="/assets/js/41.14e8af97.js"><link rel="prefetch" href="/assets/js/42.205f8e31.js"><link rel="prefetch" href="/assets/js/44.1c8df6de.js"><link rel="prefetch" href="/assets/js/45.0264d807.js"><link rel="prefetch" href="/assets/js/46.19967918.js"><link rel="prefetch" href="/assets/js/47.a889acde.js"><link rel="prefetch" href="/assets/js/48.21bbeed6.js"><link rel="prefetch" href="/assets/js/49.cb34d2a9.js"><link rel="prefetch" href="/assets/js/5.c6dfbcdd.js"><link rel="prefetch" href="/assets/js/50.2838fbd1.js"><link rel="prefetch" href="/assets/js/51.388ea9ba.js"><link rel="prefetch" href="/assets/js/52.871a6dce.js"><link rel="prefetch" href="/assets/js/53.1c2208c5.js"><link rel="prefetch" href="/assets/js/54.809944a7.js"><link rel="prefetch" href="/assets/js/55.aaac8fd3.js"><link rel="prefetch" href="/assets/js/56.41b644d3.js"><link rel="prefetch" href="/assets/js/57.bbad7929.js"><link rel="prefetch" href="/assets/js/58.e2f1539a.js"><link rel="prefetch" href="/assets/js/59.5e057b34.js"><link rel="prefetch" href="/assets/js/6.73c5f391.js"><link rel="prefetch" href="/assets/js/60.7035aa00.js"><link rel="prefetch" href="/assets/js/61.dae0f0f0.js"><link rel="prefetch" href="/assets/js/62.c5503ee6.js"><link rel="prefetch" href="/assets/js/63.e3ba917c.js"><link rel="prefetch" href="/assets/js/64.737a5548.js"><link rel="prefetch" href="/assets/js/65.d4e2bdb5.js"><link rel="prefetch" href="/assets/js/66.fcbd6a1f.js"><link rel="prefetch" href="/assets/js/67.19e86b66.js"><link rel="prefetch" href="/assets/js/68.b3e1eb36.js"><link rel="prefetch" href="/assets/js/69.fefe0f80.js"><link rel="prefetch" href="/assets/js/7.f11e9c75.js"><link rel="prefetch" href="/assets/js/70.c05eeeb0.js"><link rel="prefetch" href="/assets/js/71.9045f09b.js"><link rel="prefetch" href="/assets/js/72.e4cf6586.js"><link rel="prefetch" href="/assets/js/73.c9e2981b.js"><link rel="prefetch" href="/assets/js/74.8a3cfe1e.js"><link rel="prefetch" href="/assets/js/75.e0cfa7cc.js"><link rel="prefetch" href="/assets/js/76.d353eda5.js"><link rel="prefetch" href="/assets/js/77.d05bd565.js"><link rel="prefetch" href="/assets/js/78.c15e96b4.js"><link rel="prefetch" href="/assets/js/79.b056b967.js"><link rel="prefetch" href="/assets/js/8.b02e5425.js"><link rel="prefetch" href="/assets/js/80.4ee36c0c.js"><link rel="prefetch" href="/assets/js/81.bf8ad507.js"><link rel="prefetch" href="/assets/js/82.10254572.js"><link rel="prefetch" href="/assets/js/83.628e479e.js"><link rel="prefetch" href="/assets/js/84.c38796f1.js"><link rel="prefetch" href="/assets/js/85.3dd8a614.js"><link rel="prefetch" href="/assets/js/86.71d1e0a5.js"><link rel="prefetch" href="/assets/js/87.6a928297.js"><link rel="prefetch" href="/assets/js/88.696527fd.js"><link rel="prefetch" href="/assets/js/89.7b24aa0e.js"><link rel="prefetch" href="/assets/js/9.8e842952.js"><link rel="prefetch" href="/assets/js/90.c374703a.js"><link rel="prefetch" href="/assets/js/91.9c986f3a.js"><link rel="prefetch" href="/assets/js/92.3aea3568.js"><link rel="prefetch" href="/assets/js/93.ee476713.js"><link rel="prefetch" href="/assets/js/94.fd1f3394.js"><link rel="prefetch" href="/assets/js/95.bf0f2e17.js"><link rel="prefetch" href="/assets/js/96.c4807c9c.js"><link rel="prefetch" href="/assets/js/97.09971290.js"><link rel="prefetch" href="/assets/js/98.766b007f.js"><link rel="prefetch" href="/assets/js/99.baa07638.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26cb1efd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">编程之上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/dva/" class="nav-link">
+  Dva
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/npm/" class="nav-link">
+  Npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/architect/" class="nav-link">
+  前端架构
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/code-style/" class="nav-link">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/nodejs/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/backend/nodejswx/" class="nav-link">
+  Node.js 开发微信公众号
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构" class="dropdown-title"><span class="title">架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/architect/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/architect/git/" class="nav-link router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/architect/setting/" class="nav-link">
+  配置
+</a></li><li class="dropdown-item"><!----> <a href="/architect/cli/" class="nav-link">
+  Cli
+</a></li></ul></div></div><div class="nav-item"><a href="/app/" class="nav-link">
+  应用
+</a></div><div class="nav-item"><a href="/view/" class="nav-link">
+  看法
+</a></div> <a href="https://github.com/ruizhengyun" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/http/" class="nav-link">
+  HTTP
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/dva/" class="nav-link">
+  Dva
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/npm/" class="nav-link">
+  Npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/architect/" class="nav-link">
+  前端架构
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/code-style/" class="nav-link">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/nodejs/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/backend/nodejswx/" class="nav-link">
+  Node.js 开发微信公众号
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构" class="dropdown-title"><span class="title">架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/architect/docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/architect/git/" class="nav-link router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/architect/setting/" class="nav-link">
+  配置
+</a></li><li class="dropdown-item"><!----> <a href="/architect/cli/" class="nav-link">
+  Cli
+</a></li></ul></div></div><div class="nav-item"><a href="/app/" class="nav-link">
+  应用
+</a></div><div class="nav-item"><a href="/view/" class="nav-link">
+  看法
+</a></div> <a href="https://github.com/ruizhengyun" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Git 知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/architect/git/" class="sidebar-link">前言</a></li><li><a href="/architect/git/github.html" class="sidebar-link">Github 基础知识</a></li><li><a href="/architect/git/flow.html" class="sidebar-link">工作流</a></li><li><a href="/architect/git/git.html" class="sidebar-link">Git 基础知识</a></li><li><a href="/architect/git/branch.html" class="sidebar-link">分支</a></li><li><a href="/architect/git/tag.html" class="sidebar-link">标签</a></li><li><a href="/architect/git/rebase.html" class="active sidebar-link">Rebase 解析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/architect/git/rebase.html#merge-与-rebase" class="sidebar-link">merge 与 rebase</a></li><li class="sidebar-sub-header"><a href="/architect/git/rebase.html#rebase-优缺点" class="sidebar-link">rebase 优缺点</a></li><li class="sidebar-sub-header"><a href="/architect/git/rebase.html#rebase-法则" class="sidebar-link">rebase 法则</a></li><li class="sidebar-sub-header"><a href="/architect/git/rebase.html#rebase-交互式" class="sidebar-link">rebase 交互式</a></li><li class="sidebar-sub-header"><a href="/architect/git/rebase.html#强制推送" class="sidebar-link">强制推送</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="rebase-说明"><a href="#rebase-说明" class="header-anchor">#</a> rebase 说明</h1> <h2 id="merge-与-rebase"><a href="#merge-与-rebase" class="header-anchor">#</a> merge 与 rebase</h2> <p>两者做的事其实是一样的，都将一个分支的更改并入另一个分支，只不过方式有些不同。</p> <p><img src="/assets/img/git.rebase.7278f06f.jpeg" alt="merge 与 rebase"></p> <h3 id="合并前"><a href="#合并前" class="header-anchor">#</a> 合并前</h3> <div class="language-js extra-class"><pre class="language-js"><code>      <span class="token constant">D</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">E</span> master
+     <span class="token operator">/</span>
+<span class="token constant">A</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">B</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">C</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">F</span> origin<span class="token operator">/</span>master
+</code></pre></div><p>1.使用 <code>merge</code> 合并后</p> <div class="language-js extra-class"><pre class="language-js"><code>      <span class="token constant">D</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token constant">E</span>  
+     <span class="token operator">/</span>          \
+<span class="token constant">A</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">B</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">C</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">F</span><span class="token operator">--</span><span class="token operator">--</span><span class="token constant">G</span>   master<span class="token punctuation">,</span> origin<span class="token operator">/</span>master
+</code></pre></div><p>2.使用 <code>rebase</code> 的方式，就不会有 <code>G</code> 合并点</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">A</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">B</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">C</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">F</span><span class="token operator">--</span><span class="token operator">-</span><span class="token constant">D</span><span class="token string">'---E'</span>   master<span class="token punctuation">,</span> origin<span class="token operator">/</span>master
+</code></pre></div><blockquote><p>其中 <code>D’, E’</code> 的 commit SHA 序号跟本來 <code>D, E</code> 是不同的，应为算是砍掉重新 commit 了。</p></blockquote> <h3 id="merge-合并"><a href="#merge-合并" class="header-anchor">#</a> merge 合并</h3> <div class="language-js extra-class"><pre class="language-js"><code>git checkout feature
+git merge merge
+</code></pre></div><p>feature 分支中新的合并提交将两个分支的历史连在了一起。merge 是一个安全的操作。现有的分支不会被更改，每次合并上游更改时 feature 分支<strong>都会引入一个外来的合并提交</strong>。如果上游分支非常活跃的话，这或多或少会污染你的分支历史。</p> <h3 id="rebase-合并"><a href="#rebase-合并" class="header-anchor">#</a> rebase 合并</h3> <div class="language-js extra-class"><pre class="language-js"><code>git checkout feature
+git rebase master
+</code></pre></div><p>把整个 feature 分支移动到 master 分支的后面，有效地把所有 master 分支上新的提交并入过来。但是，rebase 为原分支上每一个提交创建一个新的提交，重写了项目历史，并且<strong>不会带来合并提交</strong>。</p> <h2 id="rebase-优缺点"><a href="#rebase-优缺点" class="header-anchor">#</a> rebase 优缺点</h2> <h3 id="优点"><a href="#优点" class="header-anchor">#</a> 优点</h3> <ul><li>项目历史会非常整洁，呈现出完美的线性</li> <li>方便 code review。</li></ul> <h3 id="缺点"><a href="#缺点" class="header-anchor">#</a> 缺点</h3> <ul><li>安全性，如果你违反了 rebase 法则，重写项目历史可能会给你的协作工作流带来灾难性的影响；</li> <li>可跟踪性，rebase 不会有合并提交中附带的信息——你看不到 feature 分支中并入了上游的哪些更改；</li></ul> <h2 id="rebase-法则"><a href="#rebase-法则" class="header-anchor">#</a> rebase 法则</h2> <p>上面提到的法则就是<strong>绝对不在公共分支上使用 rebase</strong>。即在运行 <code>git rebase</code> 之前，先问下这个分支是不是只有你自己工作，如果不是那就不能使用 rebase。</p> <h2 id="rebase-交互式"><a href="#rebase-交互式" class="header-anchor">#</a> rebase 交互式</h2> <h3 id="合并最新代码"><a href="#合并最新代码" class="header-anchor">#</a> 合并最新代码</h3> <p>允许更改并入新分支的提交，比自动的 rebase 要强大的多，它提供了对分支上提交历史完整的控制。</p> <div class="language-js extra-class"><pre class="language-js"><code>git checkout feature
+git rebase <span class="token operator">-</span>i master
+</code></pre></div><p>这里的 <code>-i</code> 是指<strong>交互模式</strong>，可以干预 rebase 事务过程，包括设置commit message、暂停 commit 等。接下来进入文本编辑器，显示所有将被移动的提交。</p> <div class="language-js extra-class"><pre class="language-js"><code>pick <span class="token number">69</span>f9342 dev_4
+  
+# Rebase de7db81<span class="token punctuation">.</span><span class="token number">.69</span>f9342 onto <span class="token function">de7db81</span> <span class="token punctuation">(</span><span class="token number">1</span> command<span class="token punctuation">)</span>
+#
+# Commands<span class="token operator">:</span>
+# p<span class="token punctuation">,</span> pick <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit
+# r<span class="token punctuation">,</span> reword <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit<span class="token punctuation">,</span> but edit the commit message
+# e<span class="token punctuation">,</span> edit <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit<span class="token punctuation">,</span> but stop <span class="token keyword">for</span> amending
+# s<span class="token punctuation">,</span> squash <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit<span class="token punctuation">,</span> but meld into previous commit
+# f<span class="token punctuation">,</span> fixup <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> like <span class="token string">&quot;squash&quot;</span><span class="token punctuation">,</span> but discard <span class="token keyword">this</span> commit's log message
+# x<span class="token punctuation">,</span> exec <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> <span class="token operator">=</span> run <span class="token function">command</span> <span class="token punctuation">(</span>the rest <span class="token keyword">of</span> the line<span class="token punctuation">)</span> using shell
+# d<span class="token punctuation">,</span> drop <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> remove commit
+# l<span class="token punctuation">,</span> label <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span> <span class="token operator">=</span> label current <span class="token constant">HEAD</span> <span class="token keyword">with</span> a name
+# t<span class="token punctuation">,</span> reset <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span> <span class="token operator">=</span> reset <span class="token constant">HEAD</span> to a label
+# m<span class="token punctuation">,</span> merge <span class="token punctuation">[</span><span class="token operator">-</span><span class="token constant">C</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token operator">-</span>c <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span> <span class="token punctuation">[</span># <span class="token operator">&lt;</span>oneline<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+# <span class="token punctuation">.</span>       create a merge commit using the original merge commit's
+# <span class="token punctuation">.</span>       <span class="token function">message</span> <span class="token punctuation">(</span>or the oneline<span class="token punctuation">,</span> <span class="token keyword">if</span> no original merge commit was
+# <span class="token punctuation">.</span>       specified<span class="token punctuation">)</span><span class="token punctuation">.</span> Use <span class="token operator">-</span>c <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> to reword the commit message<span class="token punctuation">.</span>
+#
+# These lines can be re<span class="token operator">-</span>ordered<span class="token punctuation">;</span> they are executed <span class="token keyword">from</span> top to bottom<span class="token punctuation">.</span>
+#
+# If you remove a line here <span class="token constant">THAT</span> <span class="token constant">COMMIT</span> <span class="token constant">WILL</span> <span class="token constant">BE</span> <span class="token constant">LOST</span><span class="token punctuation">.</span>
+#
+#       However<span class="token punctuation">,</span> <span class="token keyword">if</span> you remove everything<span class="token punctuation">,</span> the rebase will be aborted<span class="token punctuation">.</span>
+#
+#
+# Note that empty commits are commented out
+<span class="token string">&quot;~/dev/tutorial/git-test/.git/rebase-merge/git-rebase-todo&quot;</span> <span class="token number">27</span>L<span class="token punctuation">,</span> <span class="token number">1081</span>C
+</code></pre></div><p>如果不修改或修改提交信息后，键入 <code>:wq</code>，然后解决冲突，这时会产生临时分支，如图</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token operator">~</span><span class="token operator">/</span>dev<span class="token operator">/</span>tutorial<span class="token operator">/</span>git<span class="token operator">-</span>test  ➦ de7db81 ●✚ <span class="token operator">&gt;</span><span class="token constant">R</span><span class="token operator">&gt;</span>  
+</code></pre></div><p>此时输入</p> <div class="language-js extra-class"><pre class="language-js"><code>git add <span class="token punctuation">.</span>
+git rebase <span class="token operator">--</span><span class="token keyword">continue</span>
+# git rebase –abort 放弃一次合并
+</code></pre></div><p>然后又会进入编辑器</p> <div class="language-js extra-class"><pre class="language-js"><code>dev_4
+
+# Please enter the commit message <span class="token keyword">for</span> your changes<span class="token punctuation">.</span> Lines starting
+# <span class="token keyword">with</span> <span class="token string">'#'</span> will be ignored<span class="token punctuation">,</span> and an empty message aborts the commit<span class="token punctuation">.</span>
+#
+# interactive rebase <span class="token keyword">in</span> progress<span class="token punctuation">;</span> onto de7db81
+# Last command <span class="token function">done</span> <span class="token punctuation">(</span><span class="token number">1</span> command done<span class="token punctuation">)</span><span class="token operator">:</span>
+#    pick <span class="token number">69</span>f9342 dev_4
+# No commands remaining<span class="token punctuation">.</span>
+# You are currently rebasing branch <span class="token string">'dev_4'</span> on <span class="token string">'de7db81'</span><span class="token punctuation">.</span>
+#
+# Changes to be committed<span class="token operator">:</span>
+#       modified<span class="token operator">:</span>   <span class="token constant">README</span><span class="token punctuation">.</span>md
+#
+</code></pre></div><p>修改完提交信息后，键入 <code>:wq</code>，返回</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">[</span>detached <span class="token constant">HEAD</span> <span class="token number">5</span>fb8d7c<span class="token punctuation">]</span> dev_4
+ <span class="token number">1</span> file changed<span class="token punctuation">,</span> <span class="token number">2</span> <span class="token function">insertions</span><span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span>
+Successfully rebased and updated refs<span class="token operator">/</span>heads<span class="token operator">/</span>dev_4<span class="token punctuation">.</span>
+ <span class="token operator">~</span><span class="token operator">/</span>dev<span class="token operator">/</span>tutorial<span class="token operator">/</span>git<span class="token operator">-</span>test   dev_4  
+</code></pre></div><p>输入</p> <div class="language-js extra-class"><pre class="language-js"><code>git log <span class="token operator">--</span>graph <span class="token operator">--</span>pretty<span class="token operator">=</span>oneline <span class="token operator">--</span>abbrev<span class="token operator">-</span>commit
+</code></pre></div><p>此时分支图形展示图如下</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">*</span> <span class="token number">5</span><span class="token function">fb8d7c</span> <span class="token punctuation">(</span><span class="token constant">HEAD</span> <span class="token operator">-</span><span class="token operator">&gt;</span> dev_4<span class="token punctuation">)</span> dev_4
+<span class="token operator">*</span> <span class="token function">de7db81</span> <span class="token punctuation">(</span>master<span class="token punctuation">,</span> dev_3<span class="token punctuation">)</span> dev_3
+</code></pre></div><h3 id="本地清理"><a href="#本地清理" class="header-anchor">#</a> 本地清理</h3> <p>隔段时间执行一次交互式 rebase，可以保证 feature 分支的每个提交都有意义且没有比较傻的提交记录或你不想让别人看到的提交记录。对最近的3次提交进行交互式 rebase。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// feature 是只有你一个人才能工作的分支</span>
+git checkout feature
+git log <span class="token operator">--</span>oneline
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token function">eab2a62</span> <span class="token punctuation">(</span><span class="token constant">HEAD</span> <span class="token operator">-</span><span class="token operator">&gt;</span> dev_4<span class="token punctuation">)</span> dev_4_3
+<span class="token number">02</span>f7645 dev_4_2
+dd70779 dev_4_1
+<span class="token number">5</span>bfbcb8 dev_4
+<span class="token number">29105</span><span class="token function">e8</span> <span class="token punctuation">(</span>origin<span class="token operator">/</span>master<span class="token punctuation">,</span> origin<span class="token operator">/</span><span class="token constant">HEAD</span><span class="token punctuation">,</span> master<span class="token punctuation">)</span> Initial commit
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>git rebase <span class="token operator">-</span>i <span class="token constant">HEAD</span><span class="token operator">~</span><span class="token number">4</span>
+</code></pre></div><p>接下来进入文本编辑器，显示所有将被移动的提交。</p> <div class="language-js extra-class"><pre class="language-js"><code>pick <span class="token number">5</span>bfbcb8 dev_4
+pick <span class="token number">4456</span>af9 dev_4_1
+pick <span class="token number">2</span>dbc566 dev_4_2
+pick c4f05e9 dev_4_3
+
+# Rebase <span class="token number">29105e8</span><span class="token punctuation">.</span><span class="token punctuation">.</span>c4f05e9 onto <span class="token number">29105</span><span class="token function">e8</span> <span class="token punctuation">(</span><span class="token number">4</span> commands<span class="token punctuation">)</span>
+#
+# Commands<span class="token operator">:</span>
+# p<span class="token punctuation">,</span> pick <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit
+# r<span class="token punctuation">,</span> reword <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit<span class="token punctuation">,</span> but edit the commit message
+# e<span class="token punctuation">,</span> edit <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit<span class="token punctuation">,</span> but stop <span class="token keyword">for</span> amending
+# s<span class="token punctuation">,</span> squash <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> use commit<span class="token punctuation">,</span> but meld into previous commit
+# f<span class="token punctuation">,</span> fixup <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> like <span class="token string">&quot;squash&quot;</span><span class="token punctuation">,</span> but discard <span class="token keyword">this</span> commit's log message
+# x<span class="token punctuation">,</span> exec <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> <span class="token operator">=</span> run <span class="token function">command</span> <span class="token punctuation">(</span>the rest <span class="token keyword">of</span> the line<span class="token punctuation">)</span> using shell
+# d<span class="token punctuation">,</span> drop <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">=</span> remove commit
+# l<span class="token punctuation">,</span> label <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span> <span class="token operator">=</span> label current <span class="token constant">HEAD</span> <span class="token keyword">with</span> a name
+# t<span class="token punctuation">,</span> reset <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span> <span class="token operator">=</span> reset <span class="token constant">HEAD</span> to a label
+# m<span class="token punctuation">,</span> merge <span class="token punctuation">[</span><span class="token operator">-</span><span class="token constant">C</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token operator">-</span>c <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>label<span class="token operator">&gt;</span> <span class="token punctuation">[</span># <span class="token operator">&lt;</span>oneline<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+# <span class="token punctuation">.</span>       create a merge commit using the original merge commit's
+# <span class="token punctuation">.</span>       <span class="token function">message</span> <span class="token punctuation">(</span>or the oneline<span class="token punctuation">,</span> <span class="token keyword">if</span> no original merge commit was
+# <span class="token punctuation">.</span>       specified<span class="token punctuation">)</span><span class="token punctuation">.</span> Use <span class="token operator">-</span>c <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span> to reword the commit message<span class="token punctuation">.</span>
+#
+# These lines can be re<span class="token operator">-</span>ordered<span class="token punctuation">;</span> they are executed <span class="token keyword">from</span> top to bottom<span class="token punctuation">.</span>
+#
+# If you remove a line here <span class="token constant">THAT</span> <span class="token constant">COMMIT</span> <span class="token constant">WILL</span> <span class="token constant">BE</span> <span class="token constant">LOST</span><span class="token punctuation">.</span>
+#
+#       However<span class="token punctuation">,</span> <span class="token keyword">if</span> you remove everything<span class="token punctuation">,</span> the rebase will be aborted<span class="token punctuation">.</span>
+<span class="token string">&quot;~/dev/tutorial/git-test/.git/rebase-merge/git-rebase-todo&quot;</span> <span class="token number">30</span>L<span class="token punctuation">,</span> <span class="token number">1145</span>C
+</code></pre></div><p>交互界面中，最新列出最近的 4 个 commit（最后的是最近的一次提交），最前面是操作命令，默认 pick，表示该行被选中</p> <div class="language-js extra-class"><pre class="language-js"><code># p<span class="token punctuation">,</span> pick 选中
+# r<span class="token punctuation">,</span> reword 选中并且修改提交信息
+# e<span class="token punctuation">,</span> edit 选中，rebase 时会暂停，允许修改这个 commit
+# s<span class="token punctuation">,</span> squash 选中，会将当前commit与上一个commit合并
+# f<span class="token punctuation">,</span> fixup 与squash相同，但不会保存当前commit的提交信息
+# x<span class="token punctuation">,</span> exec 执行其他shell命令
+# d<span class="token punctuation">,</span> drop 删除提交信息
+</code></pre></div><p>英文状态下键入 <code>:i</code> ，然后将上文修改为</p> <div class="language-js extra-class"><pre class="language-js"><code>pick <span class="token number">5</span>bfbcb8 dev_4
+s <span class="token number">4456</span>af9 dev_4_1
+f <span class="token number">2</span>dbc566 dev_4_2
+s c4f05e9 dev_4_3
+</code></pre></div><p>英文状态下键入 esc，然后输入 <code>:wq</code>（保存并退出），编辑器此刻展示为</p> <div class="language-js extra-class"><pre class="language-js"><code># This is a combination <span class="token keyword">of</span> <span class="token number">4</span> commits<span class="token punctuation">.</span>
+# This is the <span class="token number">1</span>st commit message<span class="token operator">:</span>
+
+dev_4
+
+# This is the commit message #<span class="token number">1</span><span class="token operator">:</span>
+
+dev_4_1
+
+# The commit message #<span class="token number">2</span> will be skipped<span class="token operator">:</span>
+
+# dev_4_2
+
+# This is the commit message #<span class="token number">3</span><span class="token operator">:</span>
+
+dev_4_3
+
+# Please enter the commit message <span class="token keyword">for</span> your changes<span class="token punctuation">.</span> Lines starting
+# <span class="token keyword">with</span> <span class="token string">'#'</span> will be ignored<span class="token punctuation">,</span> and an empty message aborts the commit<span class="token punctuation">.</span>
+#
+# Date<span class="token operator">:</span>      Mon Nov <span class="token number">25</span> <span class="token number">23</span><span class="token operator">:</span><span class="token number">49</span><span class="token operator">:</span><span class="token number">13</span> <span class="token number">2019</span> <span class="token operator">+</span><span class="token number">0800</span>
+#
+# interactive rebase <span class="token keyword">in</span> progress<span class="token punctuation">;</span> onto <span class="token number">29105e8</span>
+# Last commands <span class="token function">done</span> <span class="token punctuation">(</span><span class="token number">4</span> commands done<span class="token punctuation">)</span><span class="token operator">:</span>
+#    fixup <span class="token number">2</span>dbc566 dev_4_2
+#    squash c4f05e9 dev_4_3
+# No commands remaining<span class="token punctuation">.</span>
+<span class="token string">&quot;~/dev/tutorial/git-test/.git/COMMIT_EDITMSG&quot;</span> <span class="token number">32</span>L<span class="token punctuation">,</span> <span class="token number">682</span>C
+</code></pre></div><p>可以看见 <code>dev_4_2</code> 的提交信息被注释了，因为命令是 <code>f</code>，如果自己不改动提交信息的话，键入 <code>:q</code></p> <div class="language-js extra-class"><pre class="language-js"><code>commit <span class="token number">69</span><span class="token function">f93421a572d6a1171bdbc94b0590fe68cd0c02</span> <span class="token punctuation">(</span><span class="token constant">HEAD</span> <span class="token operator">-</span><span class="token operator">&gt;</span> dev_4<span class="token punctuation">)</span>
+Author<span class="token operator">:</span> ruizhengyun <span class="token operator">&lt;</span>ruizhengyun@gmail<span class="token punctuation">.</span>com<span class="token operator">&gt;</span>
+Date<span class="token operator">:</span>   Mon Nov <span class="token number">25</span> <span class="token number">23</span><span class="token operator">:</span><span class="token number">49</span><span class="token operator">:</span><span class="token number">13</span> <span class="token number">2019</span> <span class="token operator">+</span><span class="token number">0800</span>
+
+    dev_4
+
+    dev_4_1
+
+    dev_4_3
+</code></pre></div><h3 id="本地清理另外一种方式-pony-foo"><a href="#本地清理另外一种方式-pony-foo" class="header-anchor">#</a> 本地清理另外一种方式 pony Foo</h3> <div class="language-js extra-class"><pre class="language-js"><code>git checkout dev_4
+git reset <span class="token constant">HEAD</span><span class="token operator">~</span><span class="token number">4</span>
+git add <span class="token punctuation">.</span>
+git commit <span class="token operator">-</span>m <span class="token string">&quot;dev_4&quot;</span>
+git push <span class="token operator">-</span>f
+</code></pre></div><p>先撤销过去 4 个 commit，然后再建一个新的</p> <h2 id="强制推送"><a href="#强制推送" class="header-anchor">#</a> 强制推送</h2> <p><code>git push</code> 命令要加上 <code>force</code> 参数，因为 <code>rebase</code> 以后，分支历史改变了，跟远程分支不一定兼容，有可能要强行推送</p> <div class="language-js extra-class"><pre class="language-js"><code>git push <span class="token operator">--</span>force
+<span class="token comment">// 或</span>
+git push <span class="token operator">-</span>f
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/10/2020, 1:33:56 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/architect/git/tag.html" class="prev">
+        标签
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.be4b832d.js" defer></script><script src="/assets/js/2.e6f4d46e.js" defer></script><script src="/assets/js/43.2a053509.js" defer></script>
+  </body>
+</html>
