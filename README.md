@@ -1,21 +1,11 @@
 # 自我介绍
 
-Hello，我是胖芮。话多、乐观、喜欢读书和旅行、热爱技术、脑洞大开和偶尔开车等...，如今潜伏前端 9 年了，仍有一颗爱折腾年轻的心。如果一下文章能帮到你一二，请 => Star <=
+Hello，我是江湖再见。话多、乐观、喜欢读书和旅行、热爱技术、脑洞大开和偶尔开车等...，如今潜伏前端 9 年了，仍有一颗爱折腾年轻的心。如果一下文章能帮到你一二，**请 Star**。
 
-## 交流
-
-<table style="border: 0; text-align: center; overflow:hidden;">
-  <tr style="border: 0;">
-    <td style="border: 0;">
-      <img src="https://ruizhengyun.cn/images/wx/pr_person.png" />
-      <p>我的微信：liferzy</p>
-    </td>
-    <td style="border: 0;">
-      <img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" />
-      <p>订阅号：编程之上</p>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/ruizhengyun/ruizhengyun.github.io" target="_blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ruizhengyun/ruizhengyun.github.io?style=social"></a>
+<a href="https://github.com/ruizhengyun/ruizhengyun.github.io/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ruizhengyun/ruizhengyun.github.io?style=flat"></a>
+<a href="https://github.com/ruizhengyun/ruizhengyun.github.io/issues?q=is%3Aissue+is%3Aopen+label%3Aview" target="_blank"><img alt="GitHub labels" src="https://img.shields.io/github/labels/ruizhengyun/ruizhengyun.github.io/view?label=%E7%9C%8B%E6%B3%95"></a>
+<a href="https://juejin.im/post/5d0878aaf265da1b83338f74" target="_blank"><img alt="掘金" src="https://img.shields.io/badge/juejin.im-%E6%8E%98%E9%87%91-%23007fff"></a>
 
 ## 小书系列
 
@@ -140,6 +130,22 @@ Hello，我是胖芮。话多、乐观、喜欢读书和旅行、热爱技术、
 <a name="应用"></a>
 
 ### 应用
+
+
+## 交流
+
+<table style="border: 0; text-align: center; overflow:hidden;">
+  <tr style="border: 0;">
+    <td style="border: 0;">
+      <img src="https://ruizhengyun.cn/images/wx/pr_person.png" />
+      <p>我的微信:liferzy</p>
+    </td>
+    <td style="border: 0;">
+      <img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" />
+      <p>订阅号:编程之上</p>
+    </td>
+  </tr>
+</table>
 
 ## 微信群友的互链
 
