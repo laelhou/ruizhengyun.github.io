@@ -2,12 +2,17 @@
 
 Hello，我是江湖再见。话多、乐观、喜欢读书和旅行、热爱技术、脑洞大开和偶尔开车等...，如今潜伏前端 9 年了，仍有一颗爱折腾年轻的心。如果一下文章能帮到你一二，**请 Star**。
 
-<a href="https://github.com/ruizhengyun/ruizhengyun.github.io" target="_blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ruizhengyun/ruizhengyun.github.io?style=social"></a>
-<a href="https://github.com/ruizhengyun/ruizhengyun.github.io/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ruizhengyun/ruizhengyun.github.io?style=flat"></a>
-<a href="https://github.com/ruizhengyun/ruizhengyun.github.io/issues?q=is%3Aissue+is%3Aopen+label%3Aview" target="_blank"><img alt="GitHub labels" src="https://img.shields.io/github/labels/ruizhengyun/ruizhengyun.github.io/view?label=%E7%9C%8B%E6%B3%95"></a>
+<a href="#我的微信:liferzy"><img alt="我的微信:liferzy" src="https://img.shields.io/badge/weChat-%E5%BE%AE%E4%BF%A1%E7%BE%A4-blue" /></a>
+<a href="#订阅号:编程之上"><img alt="订阅号:编程之上" src="https://img.shields.io/badge/%E8%AE%A2%E9%98%85%E5%8F%B7-%E7%BC%96%E7%A8%8B%E4%B9%8B%E4%B8%8A-green" /></a>
 <a href="https://juejin.im/post/5d0878aaf265da1b83338f74" target="_blank"><img alt="掘金" src="https://img.shields.io/badge/juejin.im-%E6%8E%98%E9%87%91-%23007fff"></a>
+<a href="https://github.com/ruizhengyun/ruizhengyun.github.io/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ruizhengyun/ruizhengyun.github.io?style=flat"></a>
+<a href="https://github.com/ruizhengyun/ruizhengyun.github.io/labels/javascript" target="_blank"><img alt="GitHub labels javascript" src="https://img.shields.io/github/labels/ruizhengyun/ruizhengyun.github.io/javascript"></a>
+<a href="https://github.com/ruizhengyun/ruizhengyun.github.io/labels/view" target="_blank"><img alt="GitHub labels view" src="https://img.shields.io/github/labels/ruizhengyun/ruizhengyun.github.io/view"></a>
+<a href="https://github.com/ruizhengyun/ruizhengyun.github.io" target="_blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ruizhengyun/ruizhengyun.github.io?style=social"></a>
 
 ## 小书系列
+
+> 没有链接的计划编写中
 
 - [看法](#看法)
 - [前端](#前端)
