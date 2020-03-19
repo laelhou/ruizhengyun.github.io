@@ -14,139 +14,50 @@ Hello，我是江湖再见。话多、乐观、喜欢读书和旅行、热爱技
 
 > 没有链接的计划编写中
 
-- [看法](#看法)
-- [前端](#前端)
-  - [HTTP 小书](#HTTP小书)
-  - [React 小书](#React小书)
-  - [Vue 小书](Vue小书)
-  - [Webpack 小书](#Webpack小书)
-  - [Npm 小书](#Npm小书)
-  - [前端架构小书](#前端架构小书)
-  - [Dva 小书](#Dva小书)
-  - [Typescript 小书](#Typescript小书)
-  - [Chrome 小书](#Chrome小书)
-  - [代码规范小书](#代码规范小书)
-- [后端](#后端)
-  - [Node.js 小书](#Node.js小书)
-  - [Node.js 开发微信公众号小书](#Node.js开发微信公众号小书)
-- [面试](#面试)
-- [架构](#架构)
-  - [Docker 小书](#Docker小书)
-  - [Git 小书](#Git小书)
-  - [配置小书](#配置小书)
-  - [Cli 小书](#Cli小书)
-- [应用](#应用)
-
-<a name="看法"></a>
-
-### 看法
-
-1. [技术方向如何选择](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/1)
-2. [技术如何持续精进](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/2)
-3. [技术人员转型管理](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/3)
-4. [如何带好新人](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/4)
-5. [简历优化](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/5)
-6. [跳槽的一些问题](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/6)
-7. [技术不做了做什么](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/7)
-
-<a name="前端"></a>
-
-### 前端
-
-  <a name="HTTP小书"></a>
-
-  #### HTTP小书
-  
-  1. [前言](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/8)
-  1. [网络协议的日常](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/9)
-
-  <a name="React小书"></a>
-
-  #### React 小书
-
-  <a name="Vue小书"></a>
-  
-  #### Vue 小书
-
-  <a name="Webpack小书"></a>
-  
-  #### Webpack 小书
-
-  <a name="Npm小书"></a>
-  
-  #### Npm 小书
-
-  <a name="前端架构小书"></a>
-  
-  #### 前端架构小书
-
-  <a name="Dva小书"></a>
-  
-  #### Dva 小书
-
-  <a name="Typescript小书"></a>
-  
-  #### Typescript 小书
-
-  <a name="Chrome小书"></a>
-  
-  #### Chrome 小书
-
-  <a name="代码规范小书"></a>
-  
-  #### 代码规范小书
-
-<a name="后端"></a>
-
-### 后端
-
-  <a name="Node.js小书"></a>
-  
-  #### Node.js 小书
-
-  <a name="Node.js 开发微信公众号小书"></a>
-  
-  #### Node.js 开发微信公众号小书
-
-<a name="面试"></a>
-
-### 面试
-
-<a name="架构"></a>
-
-### 架构
-
-  <a name="Docker小书"></a>
-  
-  #### Docker 小书
-
-  <a name="Git小书"></a>
-  
-  #### Git 小书
-
-  <a name="配置小书"></a>
-  
-  #### 配置小书
-
-  <a name="Cli小书"></a>
-  
-  #### Cli 小书
-
-<a name="应用"></a>
-
-### 应用
-
+- [看法](https://github.com/ruizhengyun/ruizhengyun.github.io/labels/view)
+  - [技术方向如何选择](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/1)
+  - [技术如何持续精进](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/2)
+  - [技术人员转型管理](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/3)
+  - [如何带好新人](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/4)
+  - [简历优化](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/5)
+  - [跳槽的一些问题](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/6)
+  - [技术不做了做什么](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/7)
+- [Javascript 立身之本](https://github.com/ruizhengyun/ruizhengyun.github.io/labels/javascript)
+  - [Javascript 代码压缩](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/10)
+- [HTTP 小书](https://github.com/ruizhengyun/ruizhengyun.github.io/labels/http)
+  - [前言](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/8)
+  - [网络协议的日常](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/9)
+- [React 小书](https://github.com/ruizhengyun/ruizhengyun.github.io/labels/react))
+  - [趴一趴族谱（前端开发的演变）](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/11) 
+  - [初始化项目](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/12)
+  - [第一个组件](https://github.com/ruizhengyun/ruizhengyun.github.io/issues/13)
+- Vue 小书
+- Webpack 小书
+- Npm 小书
+- 前端架构小书
+- Dva 小书
+- Typescript 小书
+- Chrome 小书
+- 代码规范小书
+- Node.js 小书
+- Node.js 开发微信公众号小书
+- 面试
+- Docker 小书
+- Git 小书
+- 配置小书
+- Cli 小书
+- 应用
 
 ## 交流
 
 <table style="border: 0; text-align: center; overflow:hidden;">
   <tr style="border: 0;">
     <td style="border: 0;">
-      <img src="https://ruizhengyun.cn/images/wx/pr_person.png" />
+      <a name="我的微信:liferzy"><img src="https://ruizhengyun.cn/images/wx/pr_person.png" /></a>
       <p>我的微信:liferzy</p>
     </td>
     <td style="border: 0;">
-      <img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" />
+      <a name="订阅号:编程之上"><img src="https://ruizhengyun.cn/images/wx/pr_qrcode.png" /></a>
       <p>订阅号:编程之上</p>
     </td>
   </tr>
